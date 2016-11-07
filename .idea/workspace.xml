@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb2d1521-060d-4664-928f-b20573865767" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="thinkphp_customer_manager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,8 +88,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="108">
-                <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -708,12 +707,20 @@
       <workItem from="1478436914488" duration="1238000" />
       <workItem from="1478479529055" duration="660000" />
       <workItem from="1478480988218" duration="91000" />
-      <workItem from="1478481783552" duration="101000" />
+      <workItem from="1478481783552" duration="144000" />
     </task>
+    <task id="LOCAL-00001" summary="Create readme.">
+      <created>1478481901798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478481901798</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61872000" />
+    <option name="totallyTimeSpent" value="61915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -756,6 +763,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create readme." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create readme." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1076,8 +1087,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="108">
-            <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
             <folding />
           </first_editor>
           <second_editor />
