@@ -20,14 +20,14 @@
     <h3 class="page-header">编辑客户信息</h3>
     <form action="{{U('Admin/Customer/update')}}" method="post">
         {{nocache}}
-        <input type="hidden" name="clientID" value="{{$data['c_id']}}">
+        <input type="hidden" name="customerID" value="{{$data['c_id']}}">
         <div class="form-group">
             <label>客户姓名</label>
-            <input class="form-control" type="text" name="clientName" placeholder="输入客户姓名" value="{{$data['c_name']}}">
+            <input class="form-control" type="text" name="customerName" placeholder="输入客户姓名" value="{{$data['c_name']}}">
         </div>
         <div class="form-group">
             <label>性别</label>
-            <select class="form-control" id="clGender" name="clientGender">
+            <select class="form-control" id="clGender" name="customerGender">
                 {{if $data['gender'] == 'male'}}
                 <option value="male" selected>男</option>
                 <option value="female">女</option>
@@ -39,11 +39,11 @@
         </div>
         <div class="form-group">
             <label>联系地址</label>
-            <input class="form-control" type="text" name="clientAddr" placeholder="输入联系地址" value="{{$data['c_address']}}">
+            <input class="form-control" type="text" name="customerAddr" placeholder="输入联系地址" value="{{$data['c_address']}}">
         </div>
         <div class="form-group">
             <label>联系电话</label>
-            <input class="form-control" type="text" name="clientPhone" placeholder="输入联系电话" value="{{$data['phone']}}">
+            <input class="form-control" type="text" name="customerPhone" placeholder="输入联系电话" value="{{$data['phone']}}">
         </div>
         <button type="submit" class="btn btn-primary">更新</button>
         {{/nocache}}

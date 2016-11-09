@@ -11,13 +11,8 @@ use Think\Controller;
 class CustomerController extends Controller{
     public function add(){
         if (IS_POST){
-            $customer=M('customer');
-            $data['C_Name']=I('post.clName');
-            $data['Gender']=I('post.clGender');
-            $data['C_Address']=I('post.clAddr');
-            $data['Phone']=I('post.clPhone');
-
-            $rs = $customer->add($data);
+            $customer = new \Admin\Model\CustomerModel();
+            $rs = $customer->AddCustomer(I('post.clName'),I('post.clGender'),I('post.clAddr'),I('post.clPhone'));
             if ($rs){
                 echo 'true';
             } else {
@@ -28,15 +23,10 @@ class CustomerController extends Controller{
 
     public function update(){
         if (IS_POST){
-            $customer=M('customer');
-            $data['C_Name']=I('post.clientName');
-            $data['Gender']=I('post.clientGender');
-            $data['C_Address']=I('post.clientAddr');
-            $data['Phone']=I('post.clientPhone');
+            $customer = new \Admin\Model\CustomerModel();
 
-            $id = I('post.clientID');
-            $where = 'C_ID='.$id;
-            $rs = $customer->where($where)->save($data);
+            $id = I('post.customerID');
+            $rs = $customer->UpdateCustomer($id,I('post.customerName'),I('post.customerGender'),I('post.customerAddr'),I('post.customerPhone'));
             if ($rs){
                 $this->success('客户信息更新成功！',U('Admin/Iframe/CustomerList'));
             } else {
@@ -47,10 +37,10 @@ class CustomerController extends Controller{
 
     public function delete(){
         if (IS_POST){
-            $customer=M('customer');
+            $customer = new \Admin\Model\CustomerModel();
+
             $id = I('post.C_ID/d');
-            $where = 'C_ID='.$id;
-            $rs = $customer->where($where)->delete();
+            $rs = $customer->DeleteCustomer($id);
             if ($rs){
                 echo 'true';
             } else {
