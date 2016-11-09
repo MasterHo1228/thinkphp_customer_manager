@@ -9,9 +9,21 @@
 namespace Admin\Model;
 use Think\Model;
 
+/**
+ * Admin账号管理模型类
+ * Class AdminUserModel
+ * @package Admin\Model
+ */
+
 class AdminUserModel extends Model{
     protected $tableName = 'AdminUser';//若数据库名单词没有用下划线隔开 需要在这里复写tableName变量（ThinkPHP的坑= =）
 
+    /**
+     * 登录账号验证
+     * @param string $UserName 用户名
+     * @param string $Password 密码
+     * @return bool
+     */
     public function CheckAccount($UserName,$Password){
         $where['Name']=$UserName;
 

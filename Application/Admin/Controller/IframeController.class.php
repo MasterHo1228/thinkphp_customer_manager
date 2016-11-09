@@ -7,7 +7,17 @@
  */
 namespace Admin\Controller;
 use Think\Controller;
+
+/**
+ * iframe独立控制类
+ * Class IframeController
+ * @package Admin\Controller
+ */
 class IframeController extends Controller {
+
+    /**
+     * 加载欢迎页
+     */
     public function welcome(){
         $Model = M();
         $usrID = session('user.usrID');
@@ -19,6 +29,9 @@ class IframeController extends Controller {
         $this->display();
     }
 
+    /**
+     * 加载客户列表页
+     */
     public function CustomerList(){
         $model = D('customer');
         $data = $model->getCustomerList();
@@ -26,6 +39,9 @@ class IframeController extends Controller {
         $this->display('customer_list');
     }
 
+    /**
+     * 加载客户信息页
+     */
     public function CustomerInfo(){
         if (IS_GET){
             $model = D('customer');

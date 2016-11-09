@@ -1,7 +1,17 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
+
+/**
+ * Index控制类
+ * Class IndexController
+ * @package Admin\Controller
+ */
 class IndexController extends Controller {
+
+    /**
+     * 登录
+     */
     public function login(){
         if (!session('?user')){
             if (IS_POST){
@@ -24,6 +34,9 @@ class IndexController extends Controller {
         }
     }
 
+    /**
+     * 加载系统主页面
+     */
     public function main(){
         $usrName=session('user.usrName');
         $usrType=session('user.usrType');
@@ -32,6 +45,9 @@ class IndexController extends Controller {
         $this->display('main');
     }
 
+    /**
+     * 登出
+     */
     public function logout(){
         $_SESSION = null;
         session_destroy();

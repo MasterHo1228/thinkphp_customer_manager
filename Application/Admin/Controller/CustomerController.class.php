@@ -8,7 +8,16 @@
 namespace Admin\Controller;
 use Think\Controller;
 
+/**
+ * 客户控制类
+ * Class CustomerController
+ * @package Admin\Controller
+ */
 class CustomerController extends Controller{
+
+    /**
+     * 添加客户
+     */
     public function add(){
         if (IS_POST){
             $customer = D('customer');
@@ -21,6 +30,9 @@ class CustomerController extends Controller{
         }
     }
 
+    /**
+     * 更新客户信息
+     */
     public function update(){
         if (IS_POST){
             $customer = D('customer');
@@ -35,6 +47,9 @@ class CustomerController extends Controller{
         }
     }
 
+    /**
+     * 删除客户
+     */
     public function delete(){
         if (IS_POST){
             $customer = D('customer');
