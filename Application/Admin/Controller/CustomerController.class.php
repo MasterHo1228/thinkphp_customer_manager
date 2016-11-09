@@ -12,7 +12,7 @@ class CustomerController extends Controller{
     public function add(){
         if (IS_POST){
             $customer = D('customer');
-            $rs = $customer->AddCustomer(I('post.clName'),I('post.clGender'),I('post.clAddr'),I('post.clPhone'));
+            $rs = $customer->addCustomer(I('post.clName'),I('post.clGender'),I('post.clAddr'),I('post.clPhone'));
             if ($rs){
                 echo 'true';
             } else {
@@ -26,7 +26,7 @@ class CustomerController extends Controller{
             $customer = D('customer');
 
             $id = I('post.customerID');
-            $rs = $customer->UpdateCustomer($id,I('post.customerName'),I('post.customerGender'),I('post.customerAddr'),I('post.customerPhone'));
+            $rs = $customer->updateCustomer($id,I('post.customerName'),I('post.customerGender'),I('post.customerAddr'),I('post.customerPhone'));
             if ($rs){
                 $this->success('客户信息更新成功！',U('Admin/Iframe/CustomerList'));
             } else {
@@ -40,7 +40,7 @@ class CustomerController extends Controller{
             $customer = D('customer');
 
             $id = I('post.C_ID/d');
-            $rs = $customer->DeleteCustomer($id);
+            $rs = $customer->deleteCustomer($id);
             if ($rs){
                 echo 'true';
             } else {

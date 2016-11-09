@@ -20,19 +20,18 @@ class IframeController extends Controller {
     }
 
     public function CustomerList(){
-        $model = M('customer');
-        $data = $model->field('C_ID,C_Name,Gender,C_Address,Phone')->select();
-        $this->assign('clientList',$data);
+        $model = D('customer');
+        $data = $model->getCustomerList();
+        $this->assign('customerList',$data);
         $this->display('customer_list');
     }
 
     public function CustomerInfo(){
         if (IS_GET){
-            $model = M('customer');
-
+            $model = D('customer');
             $id = I('get.ID/d');
-            $where = 'C_ID='.$id;
-            $data = $model->where($where)->field('C_ID,C_Name,Gender,C_Address,Phone')->find();
+            $data = $model->getCustomerInfo($id);
+
             $this->assign('data',$data);
             $this->display('customer_info');
         } else {

@@ -9,7 +9,24 @@ namespace Admin\Model;
 use Think\Model;
 
 class CustomerModel extends Model{
-    public function AddCustomer($Name,$Gender,$Address,$Phone){
+
+    public function getCustomerList(){
+        $data = $this->field('C_ID,C_Name,Gender,C_Address,Phone')->select();
+        return $data;
+    }
+
+    public function getCustomerInfo($id){
+        if (!empty($id)){
+            $where = 'C_ID='.$id;
+            $data = $this->where($where)->field('C_ID,C_Name,Gender,C_Address,Phone')->find();
+            return $data;
+        } else {
+            return false;
+        }
+
+    }
+
+    public function addCustomer($Name,$Gender,$Address,$Phone){
         $data['C_Name']=$Name;
         $data['Gender']=$Gender;
         $data['C_Address']=$Address;
@@ -18,7 +35,7 @@ class CustomerModel extends Model{
         return $this->add($data);
     }
 
-    public function UpdateCustomer($whereID,$Name,$Gender,$Address,$Phone){
+    public function updateCustomer($whereID,$Name,$Gender,$Address,$Phone){
         if (!empty($whereID)){
             $data['C_Name']=$Name;
             $data['Gender']=$Gender;
@@ -32,7 +49,7 @@ class CustomerModel extends Model{
         }
     }
 
-    public function DeleteCustomer($whereID){
+    public function deleteCustomer($whereID){
         if (!empty($whereID)){
             $whereClause = 'C_ID='.$whereID;
             return $this->where($whereClause)->delete();
