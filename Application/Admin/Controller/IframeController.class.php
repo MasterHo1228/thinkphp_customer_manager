@@ -10,7 +10,7 @@ use Think\Controller;
 class IframeController extends Controller {
     public function welcome(){
         $Model = M();
-        $usrID = I('session.usrID/d');
+        $usrID = session('user.usrID');
 
         $sql = "SELECT LastLoginTime,LastLoginIP FROM AdminUserLoginLog WHERE AdminID={$usrID} ORDER BY LastLoginTime DESC LIMIT 1,1 ;";
         $data = $Model->query($sql);
@@ -32,11 +32,15 @@ class IframeController extends Controller {
 
             $id = I('get.ID/d');
             $where = 'C_ID='.$id;
-            $data = $model->where($where)->field('C_ID,C_Name,Gender,C_Address,Phone')->select();
-            $this->assign('data',$data[0]);
+            $data = $model->where($where)->field('C_ID,C_Name,Gender,C_Address,Phone')->find();
+            $this->assign('data',$data);
             $this->display('client_info');
         } else {
             $this->error('非法操作！');
         }
+    }
+
+    public function _empty(){
+        $this->error('非法操作！','');
     }
 }

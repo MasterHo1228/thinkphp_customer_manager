@@ -36,7 +36,7 @@
             客户列表
         </div>
         <!-- /.panel-heading -->
-        {{assign var="userType" value=I('session.usrType/d')}}
+        {{assign var="userType" value=session('user.usrType')}}
         <div class="panel-body">
             {{if $userType == 1}}
             <a class="btn btn-primary btn-block" id="btnAddClient">添加客户</a>
