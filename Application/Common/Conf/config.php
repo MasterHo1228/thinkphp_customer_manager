@@ -17,14 +17,14 @@ return array(
 
     // 布局设置
     'TMPL_ENGINE_TYPE'=>'smarty',
+    //模板文件后缀
+    'TMPL_TEMPLATE_SUFFIX'  =>  '.tpl',
     'TMPL_ENGINE_CONFIG'=>array(
         'compile_dir'=>CACHE_PATH,
         'left_delimiter' => '{{',
         'right_delimiter' => '}}',
     ),
 
-    //模板文件后缀
-    'TMPL_TEMPLATE_SUFFIX'=>'.tpl',
     //默认错误跳转对应的模板文件
     'TMPL_ACTION_ERROR' => 'Tpl/dispatch_jump',
     //默认成功跳转对应的模板文件

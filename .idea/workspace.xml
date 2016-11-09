@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb2d1521-060d-4664-928f-b20573865767" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/Conf/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Common/Common/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Common/Conf/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Common/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/20914c0f075f91df3579ffbdf5180b02.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ccea6a400660ce54d68cab67b9f68781.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Data/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_10_20.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_10_24.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_10_25.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Temp/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Common/Conf/config.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Iframe/customer_info.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Iframe/customer_info.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Iframe/customer_list.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Iframe/customer_list.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Iframe/welcome.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Iframe/welcome.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/about.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/about.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/login.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/login.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/main.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/main.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Tpl/dispatch_jump.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Tpl/dispatch_jump.tpl" />
     </list>
     <ignored path="thinkphp_customer_manager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,7 +37,18 @@
     <favorites_list name="thinkphp_customer_manager" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -170,6 +157,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="thinkphp_customer_manager_platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinkphp_customer_manager_platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinkphp_customer_manager_platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinkphp_customer_manager_platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinkphp_customer_manager_platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -677,7 +700,7 @@
       <workItem from="1478481783552" duration="144000" />
       <workItem from="1478685490691" duration="598000" />
       <workItem from="1478695448163" duration="12355000" />
-      <workItem from="1478709776730" duration="439000" />
+      <workItem from="1478709776730" duration="1413000" />
     </task>
     <task id="LOCAL-00001" summary="Create readme.">
       <created>1478481901798</created>
@@ -728,11 +751,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478708838520</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Rename template files.">
+      <created>1478710286328</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1478710286328</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75307000" />
+    <option name="totallyTimeSpent" value="76281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -783,7 +813,8 @@
     <MESSAGE value="Change names~" />
     <MESSAGE value="Move scripts to model class." />
     <MESSAGE value="Add docs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add docs." />
+    <MESSAGE value="Rename template files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename template files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -883,13 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Conf/convention.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1070,10 +1094,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Conf/convention.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="342">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding />
         </state>
       </provider>
