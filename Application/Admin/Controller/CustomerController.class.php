@@ -8,7 +8,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 
-class ClientController extends Controller{
+class CustomerController extends Controller{
     public function add(){
         if (IS_POST){
             $customer=M('customer');
@@ -38,7 +38,7 @@ class ClientController extends Controller{
             $where = 'C_ID='.$id;
             $rs = $customer->where($where)->save($data);
             if ($rs){
-                $this->success('客户信息更新成功！',U('Admin/Iframe/ClientList'));
+                $this->success('客户信息更新成功！',U('Admin/Iframe/CustomerList'));
             } else {
                 $this->error('信息更新失败');
             }

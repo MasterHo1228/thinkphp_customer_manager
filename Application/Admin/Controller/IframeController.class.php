@@ -19,14 +19,14 @@ class IframeController extends Controller {
         $this->display();
     }
 
-    public function ClientList(){
+    public function CustomerList(){
         $model = M('customer');
         $data = $model->field('C_ID,C_Name,Gender,C_Address,Phone')->select();
         $this->assign('clientList',$data);
-        $this->display('client_list');
+        $this->display('customer_list');
     }
 
-    public function ClientInfo(){
+    public function CustomerInfo(){
         if (IS_GET){
             $model = M('customer');
 
@@ -34,7 +34,7 @@ class IframeController extends Controller {
             $where = 'C_ID='.$id;
             $data = $model->where($where)->field('C_ID,C_Name,Gender,C_Address,Phone')->find();
             $this->assign('data',$data);
-            $this->display('client_info');
+            $this->display('customer_info');
         } else {
             $this->error('非法操作！');
         }
