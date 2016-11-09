@@ -7,25 +7,12 @@ class IndexController extends Controller {
             if (IS_POST){
                 $userName=I('post.usrName');
                 $password=I('post.usrPasswd');
-                $userObj=D('adminuser');
-                $where['Name']=$userName;
-                $tmp_password=$userObj->where($where)->getField('Password');
-                $tmp_salt=$userObj->where($where)->getField('salt');
-                if(md5($password.$tmp_salt)==$tmp_password){
-                    $userID=$userObj->where($where)->getField('ID');
+                $model=D('AdminUser');
 
-                    $loginLog = D("adminuserloginlog");
-                    $data['AdminID']=$userID;
-                    $data['LastLoginTime']=date('Y-m-d H:i:s');
-                    $data['LastLoginIP']=I('server.REMOTE_ADDR');
-                    $loginLog->add($data);
-
-                    session('user.usrID',$userID);
-                    session('user.usrName',$userName);
-                    session('user.usrType',$userObj->where($where)->getField('UserType'));
-
+                $rs = $model->CheckAccount($userName,$password);
+                if ($rs){
                     $this->success('登录成功！',U('main'));
-                }else{
+                } else {
                     $this->error('用户名或密码错误！！');
                 }
                 die;

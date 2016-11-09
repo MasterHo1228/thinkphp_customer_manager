@@ -11,7 +11,7 @@ use Think\Controller;
 class CustomerController extends Controller{
     public function add(){
         if (IS_POST){
-            $customer = new \Admin\Model\CustomerModel();
+            $customer = D('customer');
             $rs = $customer->AddCustomer(I('post.clName'),I('post.clGender'),I('post.clAddr'),I('post.clPhone'));
             if ($rs){
                 echo 'true';
@@ -23,7 +23,7 @@ class CustomerController extends Controller{
 
     public function update(){
         if (IS_POST){
-            $customer = new \Admin\Model\CustomerModel();
+            $customer = D('customer');
 
             $id = I('post.customerID');
             $rs = $customer->UpdateCustomer($id,I('post.customerName'),I('post.customerGender'),I('post.customerAddr'),I('post.customerPhone'));
@@ -37,7 +37,7 @@ class CustomerController extends Controller{
 
     public function delete(){
         if (IS_POST){
-            $customer = new \Admin\Model\CustomerModel();
+            $customer = D('customer');
 
             $id = I('post.C_ID/d');
             $rs = $customer->DeleteCustomer($id);
