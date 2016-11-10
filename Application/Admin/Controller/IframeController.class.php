@@ -56,6 +56,6 @@ class IframeController extends Controller {
     }
 
     public function _empty(){
-        $this->error('非法操作！','');
+        $this->error('非法操作！',U('Index/login'));
     }
 }
