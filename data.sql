@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS AdminUser(
   Name VARCHAR(25) NOT NULL UNIQUE ,
   Password VARCHAR(32) NOT NULL ,
   salt CHAR(4) NOT NULL ,
-  UserType ENUM('0','1')
+  UserType ENUM('0','1') DEFAULT '0'
 );
 
 CREATE TABLE IF NOT EXISTS Customer(
