@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb2d1521-060d-4664-928f-b20573865767" name="Default" comment="Bugfix.">
+    <list default="true" id="eb2d1521-060d-4664-928f-b20573865767" name="Default" comment="Update sql scripts">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.sql" afterPath="$PROJECT_DIR$/data.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Iframe/customer_list.tpl" afterPath="$PROJECT_DIR$/Application/Admin/View/Iframe/customer_list.tpl" />
     </list>
     <ignored path="thinkphp_customer_manager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,6 +81,7 @@
         <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/IframeController.class.php" />
         <option value="$PROJECT_DIR$/data.sql" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Iframe/customer_list.tpl" />
       </list>
     </option>
   </component>
@@ -659,7 +660,7 @@
       <workItem from="1478709776730" duration="1470000" />
       <workItem from="1478766694201" duration="1809000" />
       <workItem from="1478783613377" duration="753000" />
-      <workItem from="1478958394511" duration="845000" />
+      <workItem from="1478958394511" duration="1034000" />
     </task>
     <task id="LOCAL-00001" summary="Create readme.">
       <created>1478481901798</created>
@@ -724,11 +725,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478711222763</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update sql scripts">
+      <created>1478959643550</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1478959643550</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79745000" />
+    <option name="totallyTimeSpent" value="79934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -781,7 +789,8 @@
     <MESSAGE value="Add docs." />
     <MESSAGE value="Rename template files." />
     <MESSAGE value="Bugfix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugfix." />
+    <MESSAGE value="Update sql scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update sql scripts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1045,18 +1054,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Iframe/customer_list.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Iframe/customer_list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding />
         </state>
       </provider>
