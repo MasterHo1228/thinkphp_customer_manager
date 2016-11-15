@@ -21,6 +21,7 @@
 
     <!-- Custom CSS -->
     <link href="http://cdn.bootcss.com/startbootstrap-sb-admin-2/3.3.7+1/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -157,7 +158,7 @@
                 <div class="modal-body" id="alertHintContent"></div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                    <button type="button" class="btn btn-danger" id="btnReload">确定</button>
+                    <button type="button" class="btn btn-primary" id="btnReload">确定</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal -->
@@ -187,7 +188,7 @@
                 sInfoEmpty: "没有数据",
                 sInfoFiltered: "(从 _MAX_ 条数据中检索)",
                 sZeroRecords: "没有检索到数据",
-                sSearch: "名称:",
+                sSearch: "搜索:",
                 oPaginate: {
                     sFirst: "首页",
                     sPrevious: "前一页",
