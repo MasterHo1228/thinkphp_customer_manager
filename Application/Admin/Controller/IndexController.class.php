@@ -49,7 +49,7 @@ class IndexController extends Controller {
      * 登出
      */
     public function logout(){
-        $_SESSION = null;
+        session(null);
         session_destroy();
         //跳转
         $this->success('登出系统成功！',U('login'));
